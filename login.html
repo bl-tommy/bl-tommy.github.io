@@ -1,64 +1,87 @@
-<head>
-form {
-  max-width: 300px;
-  margin: 0 auto;
-  background-color: #7289da; /* Burple background color */
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+      body {
+        background-color: #7289DA;
+      }
 
-h2 {
-  text-align: center;
-  color: #fff;
-  font-family: Arial, sans-serif; /* Different font */
-}
+      form {
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        margin: 100px auto;
+        max-width: 400px;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #333333;
+      }
 
-label {
-  display: block;
-  color: #fff;
-  margin-top: 10px;
-  font-family: Arial, sans-serif; /* Different font */
-}
+      h2 {
+        margin-top: 0;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        color: #7289DA;
+      }
 
-input {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  border-radius: 3px;
-  border: none;
-}
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
 
-.warning {
-  color: #fff;
-  font-size: 12px;
-  margin-top: 15px;
-  font-family: Arial, sans-serif; /* Different font */
-}
+      input {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+        font-family: inherit;
+        font-size: 16px;
+        color: #333333;
+      }
 
-button[type="submit"] {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 3px;
-  background-color: #fff;
-  color: #7289da; /* Burple button color */
-  cursor: pointer;
-  font-family: Arial, sans-serif; /* Different font */
-}
-</head>
+      .warning {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #999999;
+        text-align: center;
+      }
 
-<form>
-  <h2>Login</h2>
-  <label for="username">Username:</label>
-  <input type="text" id="username" name="username" required>
-  <br>
-  <label for="password">Password:</label>
-  <input type="password" id="password" name="password" required>
-  <br>
-  <p class="warning">Please note: This is a demo site. Do not enter your real username or password.</p>
-  <button type="submit">Submit</button>
-</form>
+      button {
+        display: block;
+        margin: 20px auto 0;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: #7289DA;
+        color: #FFFFFF;
+        font-family: inherit;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #677BC4;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h2>Login</h2>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <p class="warning">Please note: This is a demo site. Do not enter your real username or password.</p>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
