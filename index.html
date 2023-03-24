@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Not Discord</title>
+    <title>Happy Furry</title>
     <style>
       /* CSS styles for the navigation bar */
       nav {
@@ -27,6 +27,8 @@
         height: 100%;
         display: flex;
         align-items: center;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out;
       }
 
       nav ul li a:hover {
@@ -44,17 +46,42 @@
         font-size: 16px;
         margin: 4px 2px;
         cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out;
       }
+
+      #signup-button:hover {
+        background-color: #366b37;
+        #signup-button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out;
+
+
+      #signup-button:hover {
+        background-color: #366b37;
+      }
+      
     </style>
   </head>
   <body>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Support</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="fourms.html">Fourms</a></li>/
+        <li><a href="support.html">Support</a></li>
         <li><button id="login-button">Login</button></li>
+        <li><button id="login-button">Sign Up</button></li>
       </ul>
     </nav>
 
@@ -64,5 +91,10 @@
         window.location.href = "login.html";
       });
     </script>
+    <div style="background-color: #A2b4C7; padding: 60px;">
+      <h1 style="font-size: 60px;">Welcome to Happy Furry!</h1>
+      <p style="font-size: 20px;">At Happy Furry, we're dedicated to bringing joy to members of the furry fandom and their allies alike. Our selection of high-quality entertainment products, including toys, digital products, and informational blog posts are designed educate and entertain furries and their allies including ecuation on sexual health, including topics such as puberty, LGBTQIA+ topics, toys, and more. Our small team of staff strive to make Happy Furry an excellent recourse to the furry fandom.</p>
+      <p style="font-size: 20px;">If you want to learn more about us and our history, please visit our About Us page.</p>
+    </div>
   </body>
 </html>
